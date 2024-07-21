@@ -27,9 +27,24 @@ pip install -r requirements.txt
 conda install -c conda-forge cartopy python-kaleido
 ```
 
+## Manifolds
+
+Following manifolds are supported in this repo:
+- Euclidean
+- Hypersphere
+- Torus
+- Hyperboloid
+- Triangular mesh
+- Special orthogonal group
+
+To implement new manifolds, add python files that define the geometry of the manifold in `/geomstats/geometry`.
+
+Please refer to [geomstats/geometry](https://github.com/geomstats/geomstats/tree/main/geomstats/geometry) for examples.
+
+
 ## Running Experiments
 
-Here we support experiments on the following datasets:
+This repo supports experiments on the following datasets:
 - Earth and climate science datasets: `Volcano`, `Earthquake`, `Flood`, an d `Fire`
 - Triangular mesh datasets: `Spot the Cow` and `Standford Bunny`
 - Hyperboloid datasets
