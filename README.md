@@ -57,7 +57,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py -m \
     seed=0,1,2,3,4 \
     n_jobs=5 \
 ```
-where ```<exp>``` is one of the experiments in ```config/experiment/*.yaml``
+where ```<exp>``` is one of the experiments in `config/experiment/*.yaml`
 
 For example,
 ```
@@ -82,6 +82,6 @@ If you found the provided code with our paper useful in your work, we kindly req
 }
 ```
 
-## References
+## Acknowledgments
 
 Our code builds upon [geomstats](https://github.com/geomstats/geomstats) with jax functionality added. We thank [Riemannian Score-Based Generative Modelling](https://github.com/oxcsml/riemannian-score-sde?tab=readme-ov-file) for their pioneering work.
