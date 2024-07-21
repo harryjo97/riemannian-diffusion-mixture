@@ -1,0 +1,10 @@
+# @package _global_
+
+name: spot100
+experiment: spot100
+
+defaults:
+  - mesh_data
+  - /dataset: spot
+
+k: 100

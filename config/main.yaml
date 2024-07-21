@@ -1,0 +1,41 @@
+defaults:
+  # GENERAL #
+  - _self_
+  - server       : local
+  - logger       : csv
+  - experiment   : flood
+  - optim        : adam
+  - scheduler    : rcosine
+  - beta_schedule: linear
+  - loss         : default
+  - likelihood   : default
+  - sampler      : pc_sampler
+  
+  # enable color logging
+  - override hydra/hydra_logging: colorlog
+  - override hydra/job_logging  : colorlog
+
+eval_batch_size: ${batch_size}
+sample_batch_size: 8192 #${batch_size}
+now            : ${now:%Y-%m-%d}/${now:%H-%M-%S}
+mode           : all
+resume         : False
+seed           : 0
+PROJECT_NAME   : mix
+work_dir       : ${hydra:runtime.cwd}
+
+# path to folder with data
+data_dir: ${work_dir}/data/
+ckpt_dir: ckpt
+logs_dir: logs
+logdir  : ${work_dir}/results
+
+# perform actions in the val loop during training
+train_val : True
+train_plot: True
+
+# perform certain metrics in test mode
+test_val  : True
+test_test : True
+test_plot : False
+best_val  : False

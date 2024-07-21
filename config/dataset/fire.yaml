@@ -1,0 +1,4 @@
+_target_: data.earth.Fire
+_convert_: partial
+data_dir: ${data_dir}/earth
+name: fire

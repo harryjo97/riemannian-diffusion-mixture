@@ -1,0 +1,5 @@
+_target_: sde_lib.DiffusionMixture
+
+mix_type   : log
+drift_scale: 1.
+prior_type : unif

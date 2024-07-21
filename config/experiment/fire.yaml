@@ -1,0 +1,23 @@
+# @package _global_
+
+name: fire
+experiment: fire
+
+defaults:
+  - earth_data
+  - /dataset: fire
+
+model:
+  act: swish
+  num_layers: 13
+  hidden_dim: 512
+
+optim:
+  learning_rate: 2e-4
+
+loss:
+  eps: 1e-3
+
+batch_size: 16384
+steps     : 1000000
+patience  : 100000

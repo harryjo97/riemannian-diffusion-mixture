@@ -1,0 +1,23 @@
+defaults:
+  - /manifold : nsphere
+  - /mix      : log
+  - /generator: ambient
+  - /model    : mlp
+
+manifold:
+  dim: 2
+
+beta_schedule:
+  beta_0: 0.1
+  beta_f: 0.0
+
+splits      : [0.8, 0.1, 0.1]
+ema_rate    : 0.999
+eps         : 1.0e-3
+use_pode    : True
+
+val_freq    : 1000
+plot_freq   : 100000
+
+warmup_steps: 1000
+best_val    : True

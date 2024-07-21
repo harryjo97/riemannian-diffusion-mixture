@@ -1,0 +1,16 @@
+dm-haiku
+optax
+distrax
+fsspec[http]>=2021.05.0, !=2021.06.0
+joblib
+tqdm
+seaborn
+hydra_core==1.1.1
+hydra_colorlog==1.1
+hydra-joblib-launcher==1.1.5
+chardet
+plotly
+libigl
+pyvista
+pyevtk
+autograd

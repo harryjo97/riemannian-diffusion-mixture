@@ -1,0 +1,23 @@
+# @package _global_
+
+# to execute this experiment run:
+# python main.py experiment=s2_toy
+
+name: flood
+experiment: flood
+
+defaults:
+  - earth_data
+  - /dataset: flood
+
+model:
+  act: sin
+  num_layers: 11
+  hidden_dim: 512
+
+optim:
+  learning_rate: 4e-4
+
+batch_size  : 8192
+steps       : 600000
+patience    : 20000

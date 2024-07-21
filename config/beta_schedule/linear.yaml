@@ -1,0 +1,5 @@
+_target_: schedule.LinearBetaSchedule
+beta_0: 0.2
+beta_f: 0.0
+t0: 0.
+tf: 1.

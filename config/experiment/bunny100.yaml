@@ -1,0 +1,10 @@
+# @package _global_
+
+name: bunny100
+experiment: bunny100
+
+defaults:
+  - mesh_data
+  - /dataset: bunny
+
+k: 100

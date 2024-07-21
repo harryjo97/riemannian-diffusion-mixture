@@ -1,0 +1,39 @@
+defaults:
+  - /manifold : mesh
+  - /mix      : spec
+  - /generator: ambient
+  - /modelf   : mlp
+  - /modelb   : mlp
+
+modelf:
+  act: swish
+
+modelb:
+  act: swish
+
+likelihood:
+  method: euler
+
+k           : 1
+trunc       : 200
+
+hidden_dim  : 512
+splits      : [0.8, 0.1, 0.1]
+batch_size  : 512 #128
+steps       : 100000
+ema_rate    : 0.999
+eps         : 1.0e-3
+use_pode    : True
+
+val_freq    : 2000
+plot_freq   : 4000 #10000
+train_plot  : True
+test_test   : False #True
+test_plot   : True
+
+best_val    : True
+eval_batch_size: 10000
+sample_batch_size: 2048
+patience : 100000
+
+warmup_steps: 1000

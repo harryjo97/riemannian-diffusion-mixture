@@ -1,0 +1,34 @@
+# @package _global_
+
+name: htori
+
+defaults:
+  - /dataset  : wrapped
+  - /manifold : htori
+  - /mix      : log
+  - /generator: ambient
+  - /modelf   : mlp
+  - /modelb   : mlp
+
+n: 1
+
+modelf:
+  act: swish
+
+modelb:
+  act: swish
+
+hidden_dim  : 512
+num_layers  : 3
+
+splits      : [0.8, 0.1, 0.1]
+batch_size  : 512
+steps       : 50000
+ema_rate    : 0.999
+eps         : 1.0e-3
+use_pode    : True
+
+val_freq    : 10000
+plot_freq   : 10000
+
+warmup_steps: 1000

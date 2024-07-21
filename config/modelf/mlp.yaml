@@ -1,0 +1,4 @@
+_target_: models.networks.ScoreNetwork
+hidden_dim: 512
+num_layers: 6
+act       : swish

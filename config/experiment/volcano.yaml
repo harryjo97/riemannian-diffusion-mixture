@@ -1,0 +1,20 @@
+# @package _global_
+
+name: volcano
+experiment: volcano
+
+defaults:
+  - earth_data
+  - /dataset: volcano
+
+model:
+  act: sin
+  num_layers: 12
+  hidden_dim: 512
+
+optim:
+  learning_rate: 4e-4
+
+steps     : 1000000
+batch_size  : 8192
+patience  : 300000

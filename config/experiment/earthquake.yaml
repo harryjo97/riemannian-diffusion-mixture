@@ -1,0 +1,20 @@
+# @package _global_
+
+name: earthquake
+experiment: earthquake
+
+defaults:
+  - earth_data
+  - /dataset: earthquake
+
+model:
+  act: sin
+  num_layers: 7
+  hidden_dim: 512
+
+optim:
+  learning_rate: 4e-4
+
+batch_size  : 8192
+steps       : 600000
+patience    : 20000

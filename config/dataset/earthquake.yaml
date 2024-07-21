@@ -1,0 +1,4 @@
+_target_: data.earth.Earthquake
+_convert_: partial
+data_dir: ${data_dir}/earth
+name: earthquake
